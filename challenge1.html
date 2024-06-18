@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>JavaScript Fundamentals - Part 1 </title>
+</head>
+<body>
+    <h1>Challenge 1</h1>
+    <p> BMI Calculator.</p>
+
+    <script>
+        const heightMark = 1.78;
+        const massMark = 78;
+        const heightJohn = 1.86;
+        const massJohn = 70;
+
+        const BMIMark = massMark/(heightMark ** 2);
+        const BMIJohn = massJohn/(heightJohn * heightJohn);
+        
+        console.log(BMIMark);
+        console.log(BMIJohn);
+
+        const markHigherBMI = BMIJohn < BMIMark ;
+        console.log('Mark has a higher BMI than John');
+    </script>
+</body>
+</html>
