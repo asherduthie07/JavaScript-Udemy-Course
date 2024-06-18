@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>JavaScript Fundamentals - Part 1 </title>
+</head>
+<body>
+    <h1>Challenge 2</h1>
+    <p> BMI Calculator. With if else statements</p>
+
+    <script>
+        const heightMark = 1.78;
+        const massMark = 78;
+        const heightJohn = 1.86;
+        const massJohn = 70;
+
+        const BMIMark = massMark/(heightMark ** 2);
+        const BMIJohn = massJohn/(heightJohn * heightJohn);
+        
+        console.log(`Mark has a BMI of ${BMIMark}`);
+        console.log(`John has a BMI of ${BMIJohn}`);
+
+        const markHigherBMI = BMIJohn < BMIMark ;
+        if(markHigherBMI)console.log(`Mark has a higher BMI (${BMIMark}) than John (${BMIJohn})`);
+        else(console.log(`John has a higger BMI (${BMIJohn}) than Mark (${BMIMark})`))
+    </script>
+</body>
+</html>
