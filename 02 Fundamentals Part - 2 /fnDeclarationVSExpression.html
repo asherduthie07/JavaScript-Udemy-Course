@@ -6,19 +6,23 @@
 <body>
     <script>
         "using strict mode";
-        //Functon declaration
+        //Functon declaration ( its when a function is declared normally )
         function calcAge1 (birthYear){
             return 2037 - birthYear;
         }
         const age1 = calcAge1(1991);
         console.log(age1);
 
-        //Function expression
+        /* Function expression  ( the function becomes an expression 
+                                and is stored inside a variable which
+                                then becomes the function)*/
         const calcAge2 = function (birthYear){
             return 2037 - birthYear;
         }
         const age2 = calcAge2(2000);
         console.log(age2);
+        
+        console.log(age1, age2);
         
     </script>
 </body>
