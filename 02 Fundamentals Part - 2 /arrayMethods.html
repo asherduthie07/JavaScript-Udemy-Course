@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Fundamenetals Part - 2
+    </title>
+</head>
+<body>
+    <script>
+        const numbers = [1,2,3,4,5];
+        console.log(numbers);
+
+    //ADD ELEMENTS
+        numbers.push(6); /* adds the given variable in the last (it
+         also returns a value- the length of the new array) */
+        console.log(numbers);
+
+        numbers.unshift(0) /* adds the given variable in the begining 
+        of the array */
+        console.log(numbers);
+
+    //REMOVE ELEMENTS
+        numbers.pop(); /* removes the last element 
+        returns the element it removed */
+        console.log(numbers);
+
+        numbers.shift(); /* removes the first element of the array
+        returns the element it removed */
+        console.log(numbers);
+
+    // Index of
+        console.log(numbers.indexOf(4)); /* finds the position of the
+         element */
+
+    // Includes
+        console.log(numbers.includes(4)); /* returns true or false 
+        based on if the variable is a part of the array */
+    </script>
+</body>
+</html>
