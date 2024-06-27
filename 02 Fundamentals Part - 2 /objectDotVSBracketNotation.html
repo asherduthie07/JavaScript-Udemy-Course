@@ -15,14 +15,24 @@
         }
         console.log(asher);
         console.log(asher.lastName);
-        console.log(asher['lastName']) /* any expression inside 
+        console.log(asher['lastName']); /* any expression inside 
         the brackets */
 
         const namekey = 'Name';
         console.log(asher['first' + namekey ])
 
-        prompt('what do you want to know about asher, only enter either 
-        age ');
+        const input= prompt(`what do you want to know about 
+        asher, "only enter age, firstName, lastName, job, height"`);
+
+        if(asher[input]){
+        console.log(asher[input]);
+        }
+        else {
+            console.log(`reenter a correct value`);
+        }
+        asher.location = 'India';
+        asher['passion'] ='everything';
+
     </script>
 </body>
 </html>

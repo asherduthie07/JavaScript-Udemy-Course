@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Fundamentals Part - 2</title>
+</head>
+<body>
+    <script>
+        const asher = {
+            firstName : 'Asher',
+            lastName :'Duthie',
+            job : 'student',
+            height : 186,
+            birthyear: 2007,
+            location: 'India',
+            
+            /* calcAge: function ( year){
+                return 2024 - year;
+            } */
+            
+            /* calcAge: function (){
+                console.log(this);
+                return 2024 - (this.birthyear);
+            } */
+
+            calcAge: function (){
+                this.age = 2024 - (this.birthyear);
+                return this.age;
+            },
+            summary: function (){
+                const sum = `${this.firstName} ${this.lastName} is a ${this.age} year old ${this.job}, and he lives in ${this.location} `;
+                return sum;
+            }
+        }
+        console.log(asher.calcAge());
+        console.log(asher.age);
+        
+        console.log(asher.summary());
+    </Script>
+</body>
+</html>

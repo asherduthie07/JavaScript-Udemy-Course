@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> JavaScript Funadamentals Part - 2</title>
+</head>
+<body>
+    <script>
+        const mark = { fullName: 'Mark Miller', 
+                        mass : 78, 
+                        height : 1.69,
+                        calcBMI: function(){
+                            return this.bmi = ((this.mass)/ this.height ** 2);
+                        }
+                    };
+        const john = {fullName: 'Johan Smith', 
+                        mass : 92, 
+                        height : 1.95,
+                        calcBMI: function(){
+                            return this.bmi = this.mass / this.height ** 2;
+                        }
+                    };
+        if(mark.calcBMI() > john.calcBMI()){
+            console.log(`Mark Miller's BMI (${mark.calcBMI()}) is higher than John Smith's BMI (${john.calcBMI()})`);
+        }
+        else if (mark.calcBMI() < john.calcBMI()){
+            console.log(`Mark Miller's BMI (${mark.calcBMI()}) is lower than John Smith's BMI (${john.calcBMI()})`);
+        }
+        else {
+            console.log(`Mark Miller's BMI (${mark.calcBMI()}) is the same as John Smith's BMI (${john.calcBMI()})`);
+        }
+        
+
+    </script>
+</body>
+</html>
