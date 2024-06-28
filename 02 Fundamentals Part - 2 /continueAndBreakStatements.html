@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Fundamentals Part - 2</title>
+</head>
+<body>
+    <script>
+        const array1 = ['asher', 1292, 'sheela', 2024-2007, 'whiteboard'];
+        typesForArray1 = [];
+
+        // CONTINUE stops the particular itteration.
+        // BREAK stops running the enitre loop.
+
+        console.log(`--- Only Srtings --- `)
+         for(i=0; i < array1.length; i++){
+            if( typeof array1[i] !== 'string') continue;
+            console.log(array1[i], typeof array1[i]);
+        }
+        console.log(`--- Break With Numbers --- `)
+         for(i=0; i < array1.length; i++){
+            if( typeof array1[i] === 'number') break;
+            console.log(array1[i], typeof array1[i]);
+         }
+    </script>
+</body>
+</html>
