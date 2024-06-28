@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const bills=[22,295,176,440,37,105,10,1100,86,52];
+        const tips =[];
+        const totals =[];
+        console.log(`The Bill is ${bills}`);
+
+        const calcTip = function(){
+            for(i=0; i < bills.length ; i++){
+                if(bills[i] < 50 && bills[i] > 300) tips.push(bills[i]* 0.20);
+                else tips.push(bills[i]* 0.15);
+            }
+            console.log(`The Tip is ${tips}`);
+        }
+        const calcTotal = function(){
+            for(i=0; i < bills.length ; i++){
+                totals.push(bills[i] + tips[i]);
+            }
+            console.log(`The total is ${totals}`);
+        }
+        calcTip();
+        calcTotal();
+    </script>
+</body>
+</html>
